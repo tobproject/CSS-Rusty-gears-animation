@@ -1,0 +1,249 @@
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #5e3a22;
+    text-shadow: 1px 2px 3px #e79f4c;
+}
+
+body{
+    /* background-image: url(../img/rusty.bg.jpg); */
+    background-color: #0a0101;
+    background-size: 100% 1000px;
+    /* background-position: 1420px 633px; */
+    background-position-x: center;
+}
+
+#profile{ 
+    position: fixed;
+    /* top: 20px; */
+    display: block;
+
+     left: 1%;
+    /*right: 40%; */
+    /* z-index: 1; */
+    /* margin:10px;
+    width:5vw;
+    border:0px solid black; */
+}
+
+.instagram{
+    padding: 5px;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    font-size: 40px;
+}
+
+.github{
+    padding: 5px;
+}
+
+.fa-github:before {
+    content: "\f16d";
+    font-size: 40px;
+}
+
+  
+
+
+  .name {
+    color: #aaa;
+    font-size: 12px;
+    position:-ms-page;
+    bottom: 10px;
+    right: 10px;
+    text-align: left;
+}
+
+.gearbig{
+    background-image: url(../img/big_gear.png);
+    background-size: 256px 256px;
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 110px;
+    left: 313px;
+    z-index: 1;
+
+/* ====================BIG GEAR ANIMATION========================================== */
+transition: all 250ms;
+    animation-name: rotate-gear-big;
+    animation-duration: 3s;
+    animation-iteration-count: linear;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate-gear-big{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.gearbig:hover{
+    animation: fromBellow 500ms linear;
+
+    animation-name: rotate-gear-big;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+
+    @keyframes rotate-gear-big{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+/* ==================END OF BIG GEAR ANIMATION===================================== */
+
+
+/* ====================MEDIUM GEAR ANIMATION======================================= */
+
+.gearmedium{
+    background-image: url(../img/medium_gear.png);
+    background-size: 192px 192px;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    top: 340px;
+    left: 261px;
+    transform: rotate(23deg);
+    z-index: 2;
+
+
+
+    transition:all 250ms;
+    animation-name: rotate-gear-medium;
+    animation-duration: 3s;
+    animation-iteration-count: linear;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear-medium{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.gearmedium:hover{
+    animation: fromBellow 500ms linear;
+
+    animation-name: rotate-gear-medium;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+
+    @keyframes rotate-gear-medium{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+/* =============END OF MEDIUM GEAR ANIMATION======================================= */
+
+
+
+/* =====================SMALL GEAR ANIMATION======================================= */
+.gearsmall{
+    background-image: url(../img/small_gear.png);
+    background-size: 160px 160px;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 221px;
+    left: 174px;
+    transform: rotate(81deg);
+    z-index: 2;
+    transition: all 250ms;
+    animation-name: rotate-gear-small;
+    animation-duration: 3s;
+    animation-iteration-count: linear;
+    animation-timing-function: linear;
+}
+
+    @keyframes rotate-gear-small{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(-360deg);
+        }
+    }
+
+
+.gearsmall:hover{
+    animation: fromBellow 500ms linear;
+
+    animation-name: rotate-gear-small;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+
+    @keyframes rotate-gear-small{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/* ================END OF SMALL GEAR ANIMATION======================================= */
